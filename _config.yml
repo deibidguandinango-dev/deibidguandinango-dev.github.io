@@ -4,9 +4,9 @@ gems:
   - jekyll-paginate
 
 # Site settings
-title: "DAVID RUMILAHUI"
+title: "DAVID RUMIÑAHUI"
 description: > # this means to ignore newlines until "email:"
-  Portafolio y blog personal de David Rumilahui
+  Portafolio y blog personal de David RumiÑahui
 
 email: a-mail@mail.mail
 #blog logo
@@ -16,8 +16,8 @@ float_logo: true # true, false (default)
 # blog cover
 cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
 
-name: 'DAVID RUMILAHUI'
-author: 'DAVID RUMILAHUI'
+name: 'DAVID RUMIÑAHUI'
+author: 'DAVID RUMIÑAHUI'
 author_image: "/assets/images/author.jpg"
 
 paginate:	5
@@ -25,7 +25,7 @@ paginate:	5
 url: "http://myblog.***.***" # the base hostname & protocol for your site
 baseurl: ""
 #used to display twitter cards
-twitter_handle: '@davidrumilahui'
+twitter_handle: '@davidrumiÑahui'
 
 #fill in disqus shortname to use disqus
 #disqus: disqus-shortname
