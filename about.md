@@ -1,17 +1,17 @@
 ---
 layout: page
-title: About
+title: Sobre mí
 permalink: /about/
 ---
 
-A medium inspired Jekyll blog theme. The basic idea came from the Ghost theme 
-[Readium 2.0](http://www.svenread.com/readium-ghost-theme/). I use mediator on my own blog [The Base](blog.base68.com).
+Hola — soy David Rumilahui.
 
-You can **download** the theme here:
-[https://github.com/dirkfabisch/mediator](https://github.com/dirkfabisch/mediator) 
+Este es mi portafolio y blog personal donde comparto proyectos, artículos y recursos sobre desarrollo web, diseño y otras cosas que me interesan.
 
-You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Si quieres ver mi trabajo, puedes visitar mi perfil en GitHub:
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+[https://github.com/davidrumilahui](https://github.com/davidrumilahui)
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Si deseas contactarme, puedes enviarme un correo a la dirección indicada en el pie de página del sitio.
+
+Gracias por visitar mi sitio.
