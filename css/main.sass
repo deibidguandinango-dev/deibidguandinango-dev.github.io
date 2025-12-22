@@ -652,7 +652,9 @@ pre
 .christmas-modal
   display: none
   &.is-open
-    display: block
+    display: flex
+    align-items: center
+    justify-content: center
   position: fixed
   left: 0
   top: 0
@@ -669,7 +671,9 @@ pre
   .christmas-modal__dialog
     position: relative
     max-width: 520px
-    margin: 8% auto
+    width: 90%
+    max-height: 80vh
+    overflow: auto
     background: #fff
     border-radius: 10px
     padding: 18px
