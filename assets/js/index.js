@@ -42,6 +42,23 @@
             openChristmasModal(msg);
         });
 
+        // Abrir modal con código QR para video sorpresa
+        function openQRModal(videoUrl, title) {
+            var $modal = $("#christmas-modal");
+            var qrSrc = 'https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl=' + encodeURIComponent(videoUrl) + '&chld=L|1';
+            var body = '<div style="text-align:center;"><img src="'+qrSrc+'" alt="QR code" style="max-width:260px;width:100%;height:auto;border-radius:8px;"/></div>';
+            body += '<p style="text-align:center;margin-top:10px;"><a class="btn btn--primary" href="'+videoUrl+'" target="_blank" rel="noopener">Abrir video</a></p>';
+            $modal.find('.christmas-modal__title').text(title || 'Video sorpresa');
+            $modal.find('.christmas-modal__body').html(body);
+            $modal.attr('aria-hidden', 'false').addClass('is-open');
+        }
+
+        $(document).on('click', '.js-open-qr', function(e){
+            e.preventDefault();
+            var video = $(this).attr('data-video');
+            if (video) openQRModal(video, 'Video sorpresa');
+        });
+
         $(document).on('click', '#christmas-modal [data-close]', function(e) {
             e.preventDefault();
             closeChristmasModal();

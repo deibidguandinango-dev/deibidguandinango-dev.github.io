@@ -39,6 +39,20 @@ layout: default
 
     <div class="container featured">
       {% for post in site.tags.featured %}
+        {% if post.title == "Welcome to Jekyll!" or post.title == "Welcome" %}
+        <article class="post noarticleimage" role="article">
+          <div class="article-item">
+            <header class="post-header">
+              <h2 class="post-title">Video sorpresa</h2>
+            </header>
+            <section class="post-excerpt">
+              <div style="text-align:center;margin:14px 0;">
+                <button class="btn js-open-qr" data-video="https://youtu.be/HUOA1LGNsWQ">Video sorpresa</button>
+              </div>
+            </section>
+          </div>
+        </article>
+        {% else %}
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
           <div class="article-item">
             <header class="post-header">
@@ -49,10 +63,10 @@ layout: default
             </section>
             <div class="post-meta">
               <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-  <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
             </div>
           </div>
         </article>
+        {% endif %}
       {% endfor %}
     </div>
 
@@ -61,6 +75,20 @@ layout: default
 
     <div class="cf frame">
       {% for post in paginator.posts %}
+        {% if post.title == "Welcome to Jekyll!" or post.title == "Welcome" %}
+        <article class="post noarticleimage" role="article">
+          <div class="article-item">
+            <header class="post-header">
+              <h2 class="post-title">Video sorpresa</h2>
+            </header>
+            <section class="post-excerpt">
+              <div style="text-align:center;margin:14px 0;">
+                <button class="btn js-open-qr" data-video="https://youtu.be/HUOA1LGNsWQ">Video sorpresa</button>
+              </div>
+            </section>
+          </div>
+        </article>
+        {% else %}
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
           <div class="article-item">
             <header class="post-header">
@@ -71,10 +99,10 @@ layout: default
             </section>
             <div class="post-meta">
               <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-<!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
             </div>
           </div>
         </article>
+        {% endif %}
       {% endfor %}
     </div>
 
