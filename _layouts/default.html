@@ -18,6 +18,19 @@
     <!-- content end -->
 
     {% include footer.html %}
+    <!-- Modal para interacciones navideñas -->
+    <div id="christmas-modal" class="christmas-modal" aria-hidden="true">
+      <div class="christmas-modal__overlay" data-close></div>
+      <div class="christmas-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="christmas-modal-title">
+        <button class="christmas-modal__close" data-close aria-label="Cerrar">×</button>
+        <h3 id="christmas-modal-title" class="christmas-modal__title">¡Felices fiestas!</h3>
+        <div class="christmas-modal__body">Mensaje</div>
+        <div class="christmas-modal__actions">
+          <button class="btn btn--primary" data-close>Aceptar</button>
+        </div>
+      </div>
+    </div>
+
     {% include javascripts.html %}
 
   </body>

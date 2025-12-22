@@ -23,6 +23,33 @@
               $(this).wrap('<figure class="image"></figure>')
               .after('<figcaption>'+$(this).attr("alt")+'</figcaption>');
         });
+
+        // Modal navideño en español
+        function openChristmasModal(message) {
+            var $modal = $("#christmas-modal");
+            $modal.find('.christmas-modal__body').text(message);
+            $modal.attr('aria-hidden', 'false').addClass('is-open');
+        }
+
+        function closeChristmasModal() {
+            var $modal = $("#christmas-modal");
+            $modal.attr('aria-hidden', 'true').removeClass('is-open');
+        }
+
+        $(document).on('click', '.js-open-modal', function(e) {
+            e.preventDefault();
+            var msg = $(this).attr('data-message') || '¡Felices fiestas!';
+            openChristmasModal(msg);
+        });
+
+        $(document).on('click', '#christmas-modal [data-close]', function(e) {
+            e.preventDefault();
+            closeChristmasModal();
+        });
+
+        $(document).on('keyup', function(e) {
+            if (e.key === 'Escape') closeChristmasModal();
+        });
         
     });
 
