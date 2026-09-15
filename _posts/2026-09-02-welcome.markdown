@@ -1,17 +1,27 @@
 ---
-layout: page
-title: Sobre mí
-permalink: /about/
----
+layout: post
+title:  "Bienvenido"
+date:   2026-09-02 14:34:25
+categories: jekyll update
+tags: featured
 
+image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.JPG
+---
 **Hola** — soy David Rumiñahui.
 
 Este es mi espacio profesional y de investigación donde documento y comparto soluciones, proyectos y recursos enfocados en la **Ingeniería de Software Empresarial**. Mi área de especialización e innovación abarca la automatización de procesos, el desarrollo de software impulsado por **Inteligencia Artificial (IA)**, Machine Learning y arquitecturas robustas que responden a desafíos tecnológicos de alto nivel.
 
 Si quieres ver mi trabajo, puedes visitar mi perfil en GitHub:
-
 [https://github.com/drguandinango](https://github.com/drguandinango)
 
 Si deseas contactarme, puedes enviarme un correo directamente a: [davydrumy@gmail.com](mailto:davydrumy@gmail.com)
 
-Gracias por visitar mi sitio.
+{% comment %}
+
+<!-- Para activar en navidad, quita los tags de comment -->
+
+<div class="navidad-msg" style="text-align:center;">
+  <img src="/assets/article_images/2014-08-29-welcome-to-jekyll/desktop.JPG" alt="Felices fiestas" style="max-width:100%;height:auto;border-radius:8px;" />
+  <p style="margin-top:12px;color:#444;font-weight:600;">¡Bienvenido! Felices fiestas y gracias por visitar.</p>
+</div>
+{% endcomment %}

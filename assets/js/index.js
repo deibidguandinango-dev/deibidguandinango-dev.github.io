@@ -68,7 +68,8 @@
             if (e.key === 'Escape') closeChristmasModal();
         });
 
-        // Mostrar modal automáticamente en la mitad de la pantalla (solo 1 vez por sesión)
+        // Mostrar modal automáticamente (Oculto hasta navidad)
+        /*
         try {
             var shouldShow = !sessionStorage.getItem('christmas_shown');
             if (shouldShow) {
@@ -79,9 +80,9 @@
                 }, 700);
             }
         } catch (e) {
-            // sessionStorage puede fallar en modos privados; en ese caso, mostrar igualmente
             setTimeout(function() { openChristmasModal('¡Bienvenido! Felices fiestas.'); }, 700);
         }
+        */
         
     });
 

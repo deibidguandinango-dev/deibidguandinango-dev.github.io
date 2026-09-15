@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Perfil Profesional"
+date:   2026-09-01 10:00:00
+categories: jekyll update
+image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.JPG
+---
+
+Ingeniero en Tecnologías de la Información por la PUCE-I, especializado en desarrollo de software Full Stack de alto rendimiento. 
+
+Poseo dominio avanzado en tecnologías modernas como **TypeScript, Node.js, Nuxt.js, NestJS y PHP (CodeIgniter)**. Mi experiencia técnica se fundamenta en el diseño riguroso de bases de datos relacionales (SQL avanzado), la aplicación de metodologías ágiles como Scrum y la gestión impecable de repositorios con Git y Gitea. 
+
+Mi enfoque profesional está orientado a la optimización continua, la escalabilidad y la resolución eficiente de problemas arquitectónicos complejos en el ámbito tecnológico.

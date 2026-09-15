@@ -23,7 +23,7 @@ layout: default
             &nbsp;&nbsp;·&nbsp;&nbsp;
         {% endif %}
       {% endfor %}
-      <a href={{ "/about/" | prepend: site.baseurl }}>About</a>
+      <a href={{ "/about/" | prepend: site.baseurl }}>Acerca de mí</a>
     </div>
     <div class="holiday-actions" style="display: none; text-align:center;margin-top:10px;">
       <button class="btn js-open-modal" data-message="¡Hola! Te deseo una feliz Navidad y un próspero año nuevo.">Saludo navideño</button>
@@ -59,7 +59,14 @@ layout: default
               <h2 class="post-title" itemprop="name"><a href="{{ post.url | prepend: site.baseurl }}" itemprop="url">{{ post.title }}</a></h2>
             </header>
             <section class="post-excerpt" itemprop="description">
-              <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+              <div class="excerpt-short">
+                <p>{{ post.content | strip_html | truncatewords: 40 }}</p>
+                <a href="javascript:void(0);" onclick="this.parentElement.style.display='none'; this.parentElement.nextElementSibling.style.display='block';" style="color: #9EABB3; text-decoration: none; cursor: pointer;">Ver más</a>
+              </div>
+              <div class="excerpt-full" style="display:none;">
+                {{ post.content }}
+                <a href="javascript:void(0);" onclick="this.parentElement.style.display='none'; this.parentElement.previousElementSibling.style.display='block';" style="color: #9EABB3; text-decoration: none; cursor: pointer;">Ver menos</a>
+              </div>
             </section>
             <div class="post-meta">
               <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
@@ -75,6 +82,7 @@ layout: default
 
     <div class="cf frame">
       {% for post in paginator.posts %}
+        {% if post.tags contains 'featured' %}{% continue %}{% endif %}
         {% if post.title == "Welcome to Jekyll!" or post.title == "Welcome" %}
         <article class="post noarticleimage" role="article">
           <div class="article-item">
@@ -95,7 +103,14 @@ layout: default
               <h2 class="post-title" itemprop="name"><a href="{{ post.url | prepend: site.baseurl }}" itemprop="url">{{ post.title }}</a></h2>
             </header>
             <section class="post-excerpt" itemprop="description">
-              <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+              <div class="excerpt-short">
+                <p>{{ post.content | strip_html | truncatewords: 40 }}</p>
+                <a href="javascript:void(0);" onclick="this.parentElement.style.display='none'; this.parentElement.nextElementSibling.style.display='block';" style="color: #9EABB3; text-decoration: none; cursor: pointer;">Ver más</a>
+              </div>
+              <div class="excerpt-full" style="display:none;">
+                {{ post.content }}
+                <a href="javascript:void(0);" onclick="this.parentElement.style.display='none'; this.parentElement.previousElementSibling.style.display='block';" style="color: #9EABB3; text-decoration: none; cursor: pointer;">Ver menos</a>
+              </div>
             </section>
             <div class="post-meta">
               <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
