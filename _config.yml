@@ -34,10 +34,10 @@ twitter_handle: '@davidrumiÑahui'
 
 # social icons and sharing options
 social:
-  - icon:	twitter
-    url:	https://twitter.com/dirkfabisch
-    desc: Follow me on twitter
-    share_url: http://twitter.com/share
+  - icon:	x
+    url:	https://x.com
+    desc: Compartir en X
+    share_url: https://x.com/intent/tweet
     share_title: ?text=
     share_link: "&amp;url="
 
