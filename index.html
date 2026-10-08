@@ -17,13 +17,21 @@ layout: default
     <div class="custom-links">
       {% for social in site.social %}
         {% if social.url %}
-            <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}">
-              <i class="fa fa-{{ social.icon }}"></i>
+            <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}>
+              {% if social.icon == "x" %}
+                <svg style="width:14px; height:14px; fill:currentColor; position:relative; top:2px;" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              {% else %}
+                <i class="fa fa-{{ social.icon }}"></i>
+              {% endif %}
             </a>
             &nbsp;&nbsp;·&nbsp;&nbsp;
         {% endif %}
       {% endfor %}
       <a href={{ "/about/" | prepend: site.baseurl }}>Acerca de mí</a>
+      &nbsp;&nbsp;·&nbsp;&nbsp;
+      <a href="{{ '/assets/docs/CV_gunadinango.pdf' | prepend: site.baseurl }}" title="Descargar CV" download>
+        <svg style="width:14px; height:14px; fill:currentColor; position:relative; top:2px; margin-right:4px;" viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18v12.17l3.59-3.58L17 12l-5 5-5-5 1.41-1.41L12 14.17V2z"/></svg>Descargar CV
+      </a>
     </div>
     <div class="holiday-actions" style="display: none; text-align:center;margin-top:10px;">
       <button class="btn js-open-modal" data-message="¡Hola! Te deseo una feliz Navidad y un próspero año nuevo.">Saludo navideño</button>

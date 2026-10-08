@@ -24,8 +24,8 @@ paginate:	5
 
 url: "https://deibidguandinango-dev.github.io" # the base hostname & protocol for your site
 baseurl: ""
-#used to display twitter cards
-twitter_handle: '@davidrumiÑahui'
+#used to display X cards
+twitter_handle: '@david_rumy'
 
 #fill in disqus shortname to use disqus
 #disqus: disqus-shortname
@@ -34,26 +34,19 @@ twitter_handle: '@davidrumiÑahui'
 
 # social icons and sharing options
 social:
-  - icon:	x
-    url:	https://x.com
-    desc: Compartir en X
-    share_url: https://x.com/intent/tweet
-    share_title: ?text=
-    share_link: "&amp;url="
-
-#  - icon:	facebook
-#    url:	https://facebook.com/???
-#    desc: Connect with me facebook
-#    share_url: https://www.facebook.com/sharer.php
-#    share_title: ?t=
-#    share_link: "&amp;u="
-
   - icon:	github
     url:	https://github.com/drguandinango
     desc:	Fork me on github
     share_url:
     share_title:
     share_link:
+
+  - icon:	x
+    url:	https://x.com/david_rumy
+    desc: Sígueme en X
+    share_url: https://x.com/intent/tweet
+    share_title: ?text=
+    share_link: "&amp;url="
 
 #  - icon:	google-plus
 #    url:	https://google.com/???
